@@ -29,6 +29,10 @@ public class AppInitializer {
         System.out.println(bean1);
         System.out.println(bean2);
 
+        System.out.println("========Bean ID=======");
+
+        Customer customer = (Customer) ctx.getBean("customer");//cast
+        System.out.println(customer);
 
 
         ctx.close();
