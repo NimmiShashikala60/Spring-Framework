@@ -13,7 +13,7 @@ public class AppConfig {
         System.out.println("AppConfig:Instantiated");
     }
         @Bean
-        public BasicDataSource basicDataSource(){
+        public BasicDataSource dd(){
             return new BasicDataSource();
         }
     }
