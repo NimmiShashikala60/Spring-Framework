@@ -41,6 +41,20 @@ public class AppInitializer {
         System.out.println(dd);
 
 
-        ctx.close();
+//        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                System.out.println("JVM is about to shad down");
+//            }
+//        }));
+
+
+       // ctx.close();
+        ctx.registerShutdownHook();
+
+        Customer bean = ctx.getBean(Customer.class);
+        System.out.println(bean);
+
+
     }
 }
