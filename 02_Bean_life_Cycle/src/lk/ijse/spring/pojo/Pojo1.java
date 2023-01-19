@@ -7,9 +7,9 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PojoOne implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
+public class Pojo1 implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
 
-    public PojoOne(){
+    public Pojo1(){
         System.out.println("PojoOne:Instantiated");
     }
 
@@ -31,6 +31,7 @@ public class PojoOne implements BeanNameAware, BeanFactoryAware, ApplicationCont
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("PojoOne:Initializing Bean: Bean is Ready for USE");
+        System.out.println("=====================");
     }
 
     @Override
