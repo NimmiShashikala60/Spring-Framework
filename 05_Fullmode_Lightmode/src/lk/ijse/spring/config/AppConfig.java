@@ -9,8 +9,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan(basePackages = "lk.ijse.spring")
 public class AppConfig {
+
+    //full mode
     @Bean
     public PojoTwo pojoTwo() {
+        //inter-bean dependencies invocation
+       PojoThree pojoThree1= pojoThree();
+        System.out.println(pojoThree1);
+        PojoThree pojoThree2= pojoThree();
+        System.out.println(pojoThree2);
         return new PojoTwo();
     }
 
