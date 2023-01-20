@@ -4,15 +4,28 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class A {
+public class A implements DI{
+    //@Autowired
+    SuperB superB;//property injection
+
     @Autowired
-    SuperB superB;
-
-
-    public A(){
+    public A(SuperB s){
+        this.superB=s;//constructor injection
         System.out.println("A:Instantiated");
+    }
+    @Autowired
+    public void setInjection(SuperB s){
+        this.superB=s;
     }
     public void test(){
         superB.methodUseByA();
+    }
+
+    @Autowired
+    @Override
+    public void inject(SuperB b) {
+        //Interface through injection
+        this.superB=b;
+
     }
 }
