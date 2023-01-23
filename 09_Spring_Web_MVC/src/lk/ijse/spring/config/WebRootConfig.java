@@ -7,6 +7,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @Configuration
 @EnableWebMvc
-//@ComponentScan
+@ComponentScan(basePackages = "lk.ijse.spring.pojo")
 public class WebRootConfig {
+    public WebRootConfig(){
+        System.out.println("WebRootConfig:Instantiated");
+    }
 }
