@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/05_Fullmode_Lightmode/05_Fullmode_Lightmode.iml" filepath="$PROJECT_DIR$/05_Fullmode_Lightmode/05_Fullmode_Lightmode.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_Spring_Configuration/06_Spring_Configuration.iml" filepath="$PROJECT_DIR$/06_Spring_Configuration/06_Spring_Configuration.iml" />
       <module fileurl="file://$PROJECT_DIR$/07_Runtime_Value_Injection/07_Runtime_Value_Injection.iml" filepath="$PROJECT_DIR$/07_Runtime_Value_Injection/07_Runtime_Value_Injection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_Sprimg_Enviroment/08_Sprimg_Enviroment.iml" filepath="$PROJECT_DIR$/08_Sprimg_Enviroment/08_Sprimg_Enviroment.iml" />
     </modules>
   </component>
 </project>
