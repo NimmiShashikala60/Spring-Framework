@@ -1,5 +1,6 @@
 package lk.ijse.spring.controller;
 
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -9,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 public class HController {
 
 
-  @GetMapping(consumes = {"application/json"})
+  @GetMapping(consumes = {MediaType.APPLICATION_JSON_VALUE})
    public String testOne(){
        return "Method One Invoked";
    }
