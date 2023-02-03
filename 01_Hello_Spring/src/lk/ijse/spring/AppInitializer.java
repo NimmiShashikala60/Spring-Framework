@@ -8,7 +8,7 @@ import lk.ijse.spring.pojo.Pojo1;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppInitializer {
-    public static void main(String[] args) {
+    public static <Customer> void main(String[] args) {
         AnnotationConfigApplicationContext ctx=new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
         ctx.refresh();
