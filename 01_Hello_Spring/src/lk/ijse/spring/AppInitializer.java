@@ -1,13 +1,15 @@
 package lk.ijse.spring;
 
 import lk.ijse.spring.config.AppConfig;
+import lk.ijse.spring.pojo.BasicDataSource;
 import lk.ijse.spring.pojo.Customer;
 import lk.ijse.spring.pojo.DBConnection;
-import lk.ijse.spring.pojo.Pojo1;
+import lk.ijse.spring.pojo.PojoOne;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+
 public class AppInitializer {
-    public static <Customer> void main(String[] args) {
+    public static void main(String[] args) {
         AnnotationConfigApplicationContext ctx=new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
         ctx.refresh();
@@ -34,7 +36,7 @@ public class AppInitializer {
         Customer customer = (Customer) ctx.getBean("customer");//cast
         System.out.println(customer);
 
-        Pojo1 pojoOne = (Pojo1) ctx.getBean("pojoOne");
+        PojoOne pojoOne = (PojoOne) ctx.getBean("pojoOne");
         System.out.println(pojoOne);
         BasicDataSource dd = (BasicDataSource) ctx.getBean("dd");
         System.out.println(dd);
@@ -56,4 +58,5 @@ public class AppInitializer {
 
 
     }
+
 }
