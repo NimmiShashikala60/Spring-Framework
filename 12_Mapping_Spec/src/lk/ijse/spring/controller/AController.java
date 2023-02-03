@@ -14,7 +14,7 @@ public class AController {
     public String testTwo(){
         return "Post Method Invoked";
     }
-   @PutMapping
+    @PutMapping
     public String testThree(){
         return "Put Method Invoked";
     }
