@@ -6,11 +6,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Item implements InitializingBean {
+
     @Value("IJSE")
     private String name;
+
     public Item(){
         System.out.println("Item:Instantiated");
-        System.out.println(name);
+        System.out.println(name);//null still not ready
     }
 
     @Override

@@ -8,8 +8,5 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "lk.ijse.spring")
 public class AppConfig {
 
-    @Bean
-    public String setD(){
-        return "Hello There";
-    }
+
 }
