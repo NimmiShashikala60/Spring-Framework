@@ -9,6 +9,7 @@ public class ConfigTwo {
     public ConfigTwo(){
         System.out.println("ConfigTwo:Instantiated");
     }
+
     @Bean
     public PojoThree pojoThree(){
         return new PojoThree();
