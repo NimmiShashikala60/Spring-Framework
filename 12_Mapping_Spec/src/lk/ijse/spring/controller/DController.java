@@ -1,13 +1,21 @@
 package lk.ijse.spring.controller;
 
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/four")
 public class DController {
 
-   //character mapping
+    //Character Mapping
+    // If you want to narrow down request using path segments
+    //you can use character mapping
+    //http://localhost:8080/mapping/C1DEF
 
+    //if we have a doubt in exact mapping
+    //we can use ? for that character
     @GetMapping(path = "/C?DEF")
     public String testOne(){
         return "Method One Invoked";
@@ -15,6 +23,7 @@ public class DController {
 
     @GetMapping(path = "/C??DEF")
     public String testTwo(){
-        return "Method One Invoked";
+        return "Method Two Invoked";
     }
+
 }

@@ -7,19 +7,30 @@ import org.springframework.web.bind.annotation.*;
 public class AController {
 
     @GetMapping
-    public String testOne(){
+    public  String testOne1(){
         return "Get Method Invoked";
     }
+
+//    @GetMapping //ambiguous
+//    public  String testOne2(){
+//        return "Get Method Invoked";
+//    }
+
+
     @PostMapping
-    public String testTwo(){
+    public  String testTwo(){
         return "Post Method Invoked";
     }
+
+
     @PutMapping
-    public String testThree(){
+    public  String testThree(){
         return "Put Method Invoked";
     }
+
     @DeleteMapping
-    public String testFour(){
+    public  String testFour(){
         return "Delete Method Invoked";
     }
+
 }

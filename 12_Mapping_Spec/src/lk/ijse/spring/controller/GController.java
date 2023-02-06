@@ -1,6 +1,9 @@
 package lk.ijse.spring.controller;
 
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -8,29 +11,38 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/seven")
 public class GController {
 
-    //character mapping
+    //http://localhost:8080/mapping/seven?id=C001&name=IJSE
+    //Narrow down request with query String Parameters
+
+    //how to use query params for request narrow down
 //    @GetMapping(params = {"id","name"})
 //    public String testOne(){
-//        return "Method One Invoked";
+//        return "Method One Invoked ";
 //    }
+//
 //    @GetMapping(params = {"address","salary"})
 //    public String testTwo(){
-//        return "Method Two Invoked";
+//        return "Method Two Invoked ";
 //    }
 
-
+    //How to get the values of query params in Java EE way
 //    @GetMapping(params = {"address","salary"})
 //    public String testTwo(HttpServletRequest request){
-//        String address=request.getParameter("address");
-//        return "Method Two Invoked"+address;
+//        String address = request.getParameter("address");
+//        return "Method Two Invoked "+address;
 //    }
-@GetMapping(params = {"id","name"})
-public String testOne(@RequestParam String id,@RequestParam String name){
-    return "Method One Invoked"+id+" "+name;
-}
 
-@GetMapping(params = {"address","salary"})
-public String testTwo( String address, String salary){
-    return "Method Two Invoked"+address+" "+salary;
-   }
+    //How to get values from query params with Spring Way
+    @GetMapping(params = {"id","name"})
+    public String testOne(@RequestParam("id") String myID, @RequestParam String name){
+        return "Method One Invoked "+myID+" "+name;
+    }
+
+//    @RequestParam = not an required annotation
+
+    @GetMapping(params = {"address","salary"})
+    public String testTwo(String address,String salary){
+        return "Method Two Invoked "+address+" "+salary;
+    }
+
 }
