@@ -1,4 +1,4 @@
-package lk.ijse.spring.config;
+package src.lk.ijse.spring.config;
 
 import lk.ijse.spring.controller.CustomerController;
 import lk.ijse.spring.pojo.SpringBeanOne;
@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 //@ComponentScan(basePackages = {"lk.ijse.spring.pojo","lk.ijse.spring.controller"})
 @ComponentScan(basePackageClasses = {CustomerController.class, SpringBeanOne.class})
 public class WebAppConfig {
-    public WebAppConfig(){
+    public WebAppConfig() {
         System.out.println("WebAppConfig:Instantiated");
     }
 }
