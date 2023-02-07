@@ -1,8 +1,8 @@
-package src.lk.ijse.spring;
+package lk.ijse.spring;
 
+import lk.ijse.spring.config.WebAppConfig;
+import lk.ijse.spring.config.WebRootConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-import src.lk.ijse.spring.config.WebAppConfig;
-import src.lk.ijse.spring.config.WebRootConfig;
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
