@@ -1,4 +1,4 @@
-package lk.ijse.spring.config;
+package lk.ijse.spring;
 
 import lk.ijse.spring.controller.CustomerController;
 import org.springframework.context.annotation.Bean;

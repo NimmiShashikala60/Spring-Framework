@@ -1,10 +1,6 @@
 package lk.ijse.spring;
 
-import lk.ijse.spring.config.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import java.util.Map;
-import java.util.Properties;
 
 public class AppInitializer {
     public static void main(String[] args) {

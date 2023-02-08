@@ -1,8 +1,6 @@
 package lk.ijse.spring;
 
-import lk.ijse.spring.config.AppConfig;
 import lk.ijse.spring.di.A;
-import lk.ijse.spring.pojo.Boy;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppInitializer {

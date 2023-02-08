@@ -1,6 +1,5 @@
 package lk.ijse.spring;
 
-import lk.ijse.spring.config.AppConfig;
 import lk.ijse.spring.pojo.BasicDataSource;
 import lk.ijse.spring.pojo.Customer;
 import lk.ijse.spring.pojo.DBConnection;

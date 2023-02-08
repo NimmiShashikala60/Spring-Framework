@@ -1,4 +1,4 @@
-package lk.ijse.spring.config;
+package lk.ijse.spring;
 
 import lk.ijse.spring.pojo.PojoThree;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
